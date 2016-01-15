@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="misaki_gothic.ttf">
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+            <string>MisakiGothic</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Lobby View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LobbyViewController" customModule="TechMon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7a5-Qv-bv8">
+                                <rect key="frame" x="-6" y="-36" width="381" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lobby.png" translatesAutoresizingMaskIntoConstraints="NO" id="QDf-ag-wHh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yuma.png" translatesAutoresizingMaskIntoConstraints="NO" id="ksE-Ge-ftJ">
+                                <rect key="frame" x="87" y="52" width="210" height="303"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="aAv-c3-iKh">
+                                <rect key="frame" x="42" y="401" width="282" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-Dd-dEi">
+                                <rect key="frame" x="0.0" y="28" width="220" height="30"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタミナ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqE-rT-7kv">
+                                <rect key="frame" x="51" y="372" width="61" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPI-ux-PU2">
+                                <rect key="frame" x="35" y="482" width="304" height="73"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="18"/>
+                                <state key="normal" title="冒険に行く" backgroundImage="gold_button.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBattle" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F7d-K8-12H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lv.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKN-ha-61l">
+                                <rect key="frame" x="245" y="28" width="60" height="30"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="levelLabel" destination="tKN-ha-61l" id="1gv-yq-bgq"/>
+                        <outlet property="nameLabel" destination="4AM-Dd-dEi" id="njW-yX-FWK"/>
+                        <outlet property="staminaBar" destination="aAv-c3-iKh" id="9iT-1e-eSB"/>
+                        <segue destination="uMu-6n-5hM" kind="modal" identifier="toBattle" modalTransitionStyle="crossDissolve" id="LWj-Wl-eLN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.5" y="295.5"/>
+        </scene>
+        <!--Battle View Controller-->
+        <scene sceneID="wYn-fL-BN8">
+            <objects>
+                <viewController id="uMu-6n-5hM" customClass="BattleViewController" customModule="TechMon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c3u-lF-x1b"/>
+                        <viewControllerLayoutGuide type="bottom" id="yrh-Qh-9wX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UX1-lw-plB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="raito.png" translatesAutoresizingMaskIntoConstraints="NO" id="5bg-Id-ga0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="630"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zerorgu.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfJ-Yh-NaJ">
+                                <rect key="frame" x="1" y="-7" width="375" height="522"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a.png" translatesAutoresizingMaskIntoConstraints="NO" id="a6u-aE-M1a">
+                                <rect key="frame" x="122" y="284" width="130" height="130"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi3-kl-Mcd">
+                                <rect key="frame" x="75" y="212" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="行動" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1i-N1-S5R">
+                                <rect key="frame" x="75" y="243" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXC-Dj-FJt">
+                                <rect key="frame" x="90" y="420" width="183" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6S-jg-xYG">
+                                <rect key="frame" x="69" y="449" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="行動" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVO-CN-CdR">
+                                <rect key="frame" x="64" y="478" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gyw-jX-suN">
+                                <rect key="frame" x="125" y="222" width="127" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cCB-yw-kCe">
+                                <rect key="frame" x="125" y="253" width="127" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XEf-9F-lY5">
+                                <rect key="frame" x="125" y="457" width="127" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wr6-Eh-w2z">
+                                <rect key="frame" x="125" y="488" width="127" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-aP-hdD">
+                                <rect key="frame" x="34" y="536" width="77" height="75.5"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <state key="normal" title="こうげき" backgroundImage="metaru.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="attackAction" destination="uMu-6n-5hM" eventType="touchUpInside" id="gDL-Tl-9NU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfk-fZ-ou4">
+                                <rect key="frame" x="150" y="536" width="77" height="73.5"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <state key="normal" title="ファイア" backgroundImage="metaru.png">
+                                    <color key="titleColor" red="0.039215687659999998" green="0.031372550870000002" blue="0.11372549830000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireAction" destination="uMu-6n-5hM" eventType="touchUpInside" id="lJy-F8-AKw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B04-wm-7sg">
+                                <rect key="frame" x="260" y="537" width="77" height="72"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <state key="normal" title="溜める" backgroundImage="metaru.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tameruAction" destination="uMu-6n-5hM" eventType="touchUpInside" id="I2j-rx-hJa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkZ-9c-4CW">
+                                <rect key="frame" x="34" y="638" width="52" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9PZ-Zi-1bk">
+                                <rect key="frame" x="69" y="645" width="254" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-LM-drz">
+                                <rect key="frame" x="93" y="183" width="177" height="21"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nonomura.png" translatesAutoresizingMaskIntoConstraints="NO" id="BJZ-9n-7ET">
+                                <rect key="frame" x="125" y="45" width="130" height="130"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="attackButton" destination="KUG-aP-hdD" id="7Ou-Z4-e3o"/>
+                        <outlet property="backgroundImageView" destination="gfJ-Yh-NaJ" id="GP7-3K-MIQ"/>
+                        <outlet property="enemyHPBar" destination="Gyw-jX-suN" id="Mj0-Ra-u2C"/>
+                        <outlet property="enemyImageView" destination="BJZ-9n-7ET" id="gtp-tU-2DZ"/>
+                        <outlet property="enemyMoveBar" destination="cCB-yw-kCe" id="xfF-D2-2Hn"/>
+                        <outlet property="enemyNameLabel" destination="Esd-LM-drz" id="6y0-hm-L6V"/>
+                        <outlet property="fireButton" destination="jfk-fZ-ou4" id="Epa-ua-vhx"/>
+                        <outlet property="playerHPBar" destination="XEf-9F-lY5" id="NtQ-N6-goz"/>
+                        <outlet property="playerImageView" destination="a6u-aE-M1a" id="fu3-Fh-qiD"/>
+                        <outlet property="playerMoveBar" destination="wr6-Eh-w2z" id="YRe-IR-yfo"/>
+                        <outlet property="playerNameLabel" destination="gXC-Dj-FJt" id="mtV-1d-q3D"/>
+                        <outlet property="playerTPBar" destination="9PZ-Zi-1bk" id="jfh-Cm-QHq"/>
+                        <outlet property="tameruButton" destination="B04-wm-7sg" id="YIL-Wa-Rns"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh9-lc-M66" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582.5" y="295.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a.png" width="234" height="244"/>
+        <image name="bgimage.jpg" width="1280" height="960"/>
+        <image name="gold_button.png" width="800" height="245"/>
+        <image name="lobby.png" width="500" height="400"/>
+        <image name="metaru.png" width="692" height="352"/>
+        <image name="nonomura.png" width="434" height="424"/>
+        <image name="raito.png" width="1016" height="468"/>
+        <image name="yuma.png" width="184" height="274"/>
+        <image name="zerorgu.png" width="822" height="500"/>
+    </resources>
+</document>
